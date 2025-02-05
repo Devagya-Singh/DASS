@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+// JavaScript for smooth scrolling and dynamic features
 document.querySelectorAll('header nav a').forEach(link => {
     link.addEventListener('click', event => {
         event.preventDefault();
@@ -13,10 +13,10 @@ document.querySelectorAll('header nav a').forEach(link => {
 // Contact form submission alert
 document.getElementById('contact-form').addEventListener('submit', event => {
     event.preventDefault();
-    alert('Thank you for contacting us. We will get back to you shortly!');
+    alert('Thank you for reaching out. We will respond to your inquiry shortly.');
 });
 
-// Dynamic hero greeting
+// Dynamic hero greeting based on time of day
 window.onload = function() {
     const greetingText = document.querySelector('.hero h1');
     const hour = new Date().getHours();
