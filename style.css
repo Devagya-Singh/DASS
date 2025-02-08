@@ -142,3 +142,86 @@ footer p a {
 footer p a:hover {
     color: #1b5dbf;
 }
+.hero {
+    background: linear-gradient(135deg, #007BFF, #00BFFF);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    animation: slideInLogo 2s forwards; /* Animation for logo and text */
+}
+
+.hero-logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.dass-text {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.full-name {
+    display: inline-block;
+    font-size: 1.5em;
+    color: white;
+    opacity: 0;
+    margin-top: 20px;
+    transform: translateX(100%);
+    animation: slideFullName 2s 2s forwards; /* Animation for the full name */
+}
+
+.full-name span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.hero .btn {
+    background-color: #FFD700;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .btn:hover {
+    background-color: #FFC107;
+    transform: scale(1.1);
+}
+
+/* Animation to slide in the logo and text */
+@keyframes slideInLogo {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation to slide in the full name */
+@keyframes slideFullName {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
