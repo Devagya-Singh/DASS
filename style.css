@@ -1,156 +1,3 @@
-body {
-    font-family: 'Poppins', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #f3f4f6, #e4e7eb);
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background: #ffffff;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-header .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2c7efb;
-    letter-spacing: 1px;
-}
-
-header nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #555;
-    font-size: 15px;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover {
-    color: #2c7efb;
-}
-
-.hero {
-    text-align: center;
-    padding: 120px 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://static.wixstatic.com/media/e3eb62.jpg') center/cover no-repeat;
-    color: white;
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
-}
-
-.hero h1 {
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    line-height: 1.8;
-}
-
-.hero .btn {
-    display: inline-block;
-    background: #2c7efb;
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 50px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.hero .btn:hover {
-    background: #256ccd;
-    transform: translateY(-2px);
-}
-
-.content {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 25px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.content h2 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.content h3 {
-    font-size: 22px;
-    margin-top: 20px;
-    color: #555;
-}
-
-.content p {
-    font-size: 16px;
-    color: #666;
-}
-
-.content ul {
-    margin: 20px 0;
-    padding-left: 20px;
-    color: #555;
-}
-
-.content ul li {
-    margin-bottom: 10px;
-    list-style: disc;
-}
-
-footer {
-    background: #2c2c2c;
-    color: #bbb;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    font-size: 14px;
-    border-top: 1px solid #444;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer p a {
-    color: #2c7efb;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer p a:hover {
-    color: #1b5dbf;
-}
-.hero {
-    background: linear-gradient(135deg, #007BFF, #00BFFF);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    position: relative;
-    overflow: hidden;
-}
-
 .hero-logo {
     display: flex;
     align-items: center;
@@ -185,23 +32,6 @@ footer p a:hover {
     font-weight: bold;
 }
 
-.hero .btn {
-    background-color: #FFD700;
-    color: #333;
-    padding: 15px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    position: relative;
-    z-index: 1;
-}
-
-.hero .btn:hover {
-    background-color: #FFC107;
-    transform: scale(1.1);
-}
-
 /* Animation to slide in the logo and text */
 @keyframes slideInLogo {
     0% {
@@ -224,4 +54,15 @@ footer p a:hover {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+/* Ensure the hero section has sufficient height and visibility for the animation */
+.hero {
+    background: linear-gradient(135deg, #007BFF, #00BFFF);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Ensure it's tall enough to show the animation */
 }
