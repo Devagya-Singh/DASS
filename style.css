@@ -6,7 +6,6 @@
     opacity: 0;
     animation: slideInLogo 2s forwards; /* Animation for logo and text */
 }
-
 .hero-logo img {
     height: 50px;
     vertical-align: middle;
