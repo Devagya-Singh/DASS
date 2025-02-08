@@ -1,7 +1,7 @@
-# Dynamic Article Submission System (DASS)
+# Dynamic Academic Submission System (DASS)
 
 ## Overview
-**Dynamic Article Submission System (DASS)** is an intuitive and efficient platform designed to streamline the process of research paper submissions for authors and conference organizers. The system offers a seamless experience for submitting, reviewing, and managing research articles, ensuring a smooth workflow from submission to publication.
+**Dynamic Academic Submission System (DASS)** is an intuitive and efficient platform designed to streamline the process of research paper submissions for authors and conference organizers. The system offers a seamless experience for submitting, reviewing, and managing research articles, ensuring a smooth workflow from submission to publication.
 
 ## Features
 - **User-Friendly Submission Portal:** Simplifies the submission process for authors.
@@ -67,7 +67,7 @@
 
 ## Contributors
 - **Devagya Singh** *(Project Lead)*  
-- Swarlipi  
+- Swaralipi  
 - Sampurna  
 - Deebleena  
 - Adrija  
