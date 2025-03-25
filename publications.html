@@ -3,36 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile page</title>
+    <title>My Publications - DASS</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="menu-bar">
-        <p>Home</p>
-        <p>Dashboard</p>
-        <p>My Publication</p>
-        <p>About Us</p>
-        <p>Contact Us</p>
-        <img src="pfp.png" alt="">
-    </div>
-    <div class="user">
-    <div class="display">
-        <img src="pfp.png" alt="">
-        <h1 class="name">User Name</h1>
-        <a href=""><i class="fa-regular fa-pen-to-square"></i></a>
-    </div>
-    <div class="details">
-        <h1 class="usedetails">User Details</h1>
-        <p>Email Address</p>
-        <p>Contact</p>
-        <p>Location</p>
-        <p>Organization</p>
-    </div>
-    <div class="change">
-    <a href=""class="pass">Change Password</a>
-    <a href="" class="pass">Delete Account</a>
-</div>
-</div>
+    <header class="glass-header">
+        <div class="logo">
+            <img src="logo.png" alt="DASS Logo">
+            <span>DASS</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="publications.html">Publications</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <div class="user-profile">
+            <div class="profile-header">
+                <img src="pfp.png" alt="Profile Picture" class="profile-image">
+                <h1 class="profile-name">User Name</h1>
+                <a href="#" class="edit-profile"><i class="fa-regular fa-pen-to-square"></i></a>
+            </div>
+            
+            <div class="profile-details">
+                <h2>User Details</h2>
+                <form class="user-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact</label>
+                        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" placeholder="Enter your location">
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization</label>
+                        <input type="text" id="organization" name="organization" placeholder="Enter your organization">
+                    </div>
+                </form>
+            </div>
+            
+            <div class="profile-actions">
+                <a href="#" class="action-button">Change Password</a>
+                <a href="#" class="action-button danger">Delete Account</a>
+            </div>
+        </div>
+        
+        <div class="publications-list">
+            <h2>My Publications</h2>
+            <div class="publications-container">
+                <!-- Publications will be listed here -->
+                <p class="no-publications">No publications yet. Add your first publication!</p>
+                <a href="add_publications.html" class="btn-gold">Add New Publication</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
