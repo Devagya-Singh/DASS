@@ -7,6 +7,88 @@
   --text-color: #333333;
   --light-text: #F5F2EA;
 }
+header nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    header nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--background);
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dashboard-section {
+    background-color: var(--light-text);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.action-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: var(--accent-color);
+}
+
+.notifications-list {
+    list-style: none;
+    padding: 0;
+}
+
+.notifications-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--secondary-color);
+}
 
 @media (max-width: 768px) {
   :root {
