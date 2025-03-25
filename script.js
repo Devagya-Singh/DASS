@@ -1,3 +1,8 @@
+// Add this to your existing script.js
+document.getElementById('login-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('Login functionality will be implemented soon.');
+});
 // Efficient JavaScript with modern practices
 document.addEventListener('DOMContentLoaded', () => {
     // Dynamic greeting based on time of day
