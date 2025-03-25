@@ -1,31 +1,65 @@
-// JavaScript for smooth scrolling and dynamic features
-document.querySelectorAll('header nav a').forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+// Efficient JavaScript with modern practices
+document.addEventListener('DOMContentLoaded', () => {
+    // Dynamic greeting based on time of day
+    updateGreeting();
+    
+    // Smooth scrolling for navigation
+    setupSmoothScrolling();
+    
+    // Form submission handling
+    setupContactForm();
 });
 
-// Contact form submission alert
-document.getElementById('contact-form').addEventListener('submit', event => {
-    event.preventDefault();
-    alert('Thank you for reaching out. We will respond to your inquiry shortly.');
-});
-
-// Dynamic hero greeting based on time of day
-window.onload = function() {
-    const greetingText = document.querySelector('.hero h1');
+// Update greeting based on time of day
+const updateGreeting = () => {
+    const greetingElement = document.getElementById('greeting');
     const hour = new Date().getHours();
-
+    
+    let greeting = 'Welcome to DASS';
+    
     if (hour < 12) {
-        greetingText.textContent = 'Good Morning! Welcome to DASS';
+        greeting = 'Good Morning! Welcome to DASS';
     } else if (hour < 18) {
-        greetingText.textContent = 'Good Afternoon! Welcome to DASS';
+        greeting = 'Good Afternoon! Welcome to DASS';
     } else {
-        greetingText.textContent = 'Good Evening! Welcome to DASS';
+        greeting = 'Good Evening! Welcome to DASS';
+    }
+    
+    greetingElement.textContent = greeting;
+};
+
+// Setup smooth scrolling for navigation links
+const setupSmoothScrolling = () => {
+    document.querySelectorAll('header nav a').forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
+            
+            const targetId = link.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+};
+
+// Handle contact form submission
+const setupContactForm = () => {
+    const contactForm = document.getElementById('contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', event => {
+            event.preventDefault();
+            
+            // Form validation logic would go here
+            
+            // Show success message
+            alert('Thank you for reaching out. We will respond to your inquiry shortly.');
+            contactForm.reset();
+        });
     }
 };
