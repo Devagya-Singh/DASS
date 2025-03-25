@@ -16,7 +16,19 @@ body {
   padding-top: 100px;
   margin: 0;
 }
-
+const header = $0;
+await setElementStyles(header, {
+  justifyContent: 'center',
+  width: '100%',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+});
+const data = {
+  headerJustifyContent: window.getComputedStyle(header).justifyContent,
+  headerWidth: window.getComputedStyle(header).width,
+  headerMarginLeft: window.getComputedStyle(header).marginLeft,
+  headerMarginRight: window.getComputedStyle(header).marginRight,
+};
 /* Glass Header */
 .glass-header {
   background: rgba(245, 242, 234, 0.8);
