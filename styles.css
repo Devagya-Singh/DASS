@@ -7,6 +7,15 @@
   --text-color: #333333;
   --light-text: #F5F2EA;
 }
+@media (max-width: 768px) {
+  :root {
+    --heading-xl: 3rem;
+    --heading-l: 2.5rem;
+    --heading-m: 1.75rem;
+    --heading-s: 1.25rem;
+    --nav-size: 1rem;
+  }
+
 .logo span {
   font-family: 'Sofia Pro', 'Montserrat', sans-serif;
   font-size: 22px; /* Larger size for better visibility */
@@ -15,6 +24,7 @@
   color: var(--primary-color);
 }
 header nav a {
+  font-size: 16px;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
   color: var(--primary-color);
