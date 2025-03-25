@@ -7,17 +7,21 @@
   --text-color: #333333;
   --light-text: #F5F2EA;
 }
+.logo span {
+  font-family: 'Sofia Pro', 'Montserrat', sans-serif;
+  font-size: 22px; /* Larger size for better visibility */
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: var(--primary-color);
+}
 header nav a {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 18px; /* Increased from default size */
   font-weight: 600;
   color: var(--primary-color);
   letter-spacing: 0.5px;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
-
-
 
 body {
   font-family: 'Cormorant Garamond', serif;
