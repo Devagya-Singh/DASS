@@ -147,3 +147,18 @@ body {
   color: var(--secondary-color);
   font-style: italic;
 }
+/* Add this to your CSS */
+.logo img {
+  height: 50px;
+  width: auto;
+  max-width: 50px; /* Ensures the logo doesn't exceed this width */
+  vertical-align: middle;
+  object-fit: contain; /* Maintains aspect ratio */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 300px; /* Limits the overall logo container width */
+}
