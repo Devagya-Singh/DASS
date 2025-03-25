@@ -17,13 +17,7 @@ header nav a {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.logo span {
-  font-family: 'Sofia Pro', 'Montserrat', sans-serif;
-  font-size: 22px; /* Larger size for better visibility */
-  font-weight: 500;
-  letter-spacing: 0.8px;
-  color: var(--primary-color);
-}
+
 
 body {
   font-family: 'Cormorant Garamond', serif;
