@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="glass-header">
+   <header class="glass-header">
   <div class="logo">
     <img src="logo.png" alt="DASS Logo">
     <span>Dynamic Academic Submission System</span>
   </div>
   <nav>
-    <a href="#features">Features</a>
-    <a href="#about">About</a>
-    <a href="#conferences">Conferences</a>
-    <a href="#team">Team</a>
+    <a href="#home">Home</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#publications">My Publications</a>
+    <a href="#about">About Us</a>
     <a href="#contact">Contact</a>
+    <a href="#login" class="btn-login">Login</a>
   </nav>
 </header>
-
 
     <section class="hero">
   <div class="gradient-overlay"></div>
@@ -34,6 +34,31 @@
   </div>
 </section>
 
+<section id="login" class="login-section">
+  <h2>Login to DASS</h2>
+  <div class="social-login">
+    <button class="btn-social btn-google">Login with Google</button>
+    <button class="btn-social btn-linkedin">Login with LinkedIn</button>
+    <button class="btn-social btn-orcid">Login with ORCID</button>
+    <button class="btn-social btn-facebook">Login with Facebook</button>
+  </div>
+  <div class="login-divider">OR</div>
+  <form id="login-form">
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <div class="password-tips">
+      <p>Tips for a strong password:</p>
+      <ul>
+        <li>Use a mix of uppercase and lowercase letters</li>
+        <li>Include numbers and special characters</li>
+        <li>Avoid common words and sequences</li>
+      </ul>
+    </div>
+    <label><input type="checkbox"> Remember Me</label>
+    <a href="#" class="forgot-password">Forgot Password?</a>
+    <button type="submit" class="btn-gold">Login</button>
+  </form>
+</section>
 
     <section id="about" class="about-section">
         <h2>About DASS</h2>
