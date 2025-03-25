@@ -1,70 +1,45 @@
-// Add this to your existing script.js
-document.getElementById('login-form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  alert('Login functionality will be implemented soon.');
-});
-// Efficient JavaScript with modern practices
-document.addEventListener('DOMContentLoaded', () => {
-    // Dynamic greeting based on time of day
-    updateGreeting();
-    
-    // Smooth scrolling for navigation
-    setupSmoothScrolling();
-    
-    // Form submission handling
-    setupContactForm();
-});
-
-// Update greeting based on time of day
-const updateGreeting = () => {
-    const greetingElement = document.getElementById('greeting');
-    const hour = new Date().getHours();
-    
-    let greeting = 'Welcome to DASS';
-    
-    if (hour < 12) {
-        greeting = 'Good Morning! Welcome to DASS';
-    } else if (hour < 18) {
-        greeting = 'Good Afternoon! Welcome to DASS';
-    } else {
-        greeting = 'Good Evening! Welcome to DASS';
-    }
-    
-    greetingElement.textContent = greeting;
-};
-
-// Setup smooth scrolling for navigation links
-const setupSmoothScrolling = () => {
-    document.querySelectorAll('header nav a').forEach(link => {
-        link.addEventListener('click', event => {
-            event.preventDefault();
-            
-            const targetId = link.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 100,
-                    behavior: 'smooth'
-                });
-            }
-        });
+// JavaScript for smooth scrolling and dynamic features
+document.addEventListener('DOMContentLoaded', function() {
+  // Setup navigation links
+  document.querySelectorAll('header nav a').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
     });
-};
+  });
 
-// Handle contact form submission
-const setupContactForm = () => {
-    const contactForm = document.getElementById('contact-form');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', event => {
-            event.preventDefault();
-            
-            // Form validation logic would go here
-            
-            // Show success message
-            alert('Thank you for reaching out. We will respond to your inquiry shortly.');
-            contactForm.reset();
-        });
+  // Contact form submission alert
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', event => {
+      event.preventDefault();
+      alert('Thank you for reaching out. We will respond to your inquiry shortly.');
+    });
+  }
+
+  // Login form handling
+  const loginForm = document.getElementById('login-form');
+  if (loginForm) {
+    loginForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Login functionality will be implemented soon.');
+    });
+  }
+
+  // Dynamic hero greeting based on time of day
+  const greetingText = document.querySelector('.hero h1');
+  if (greetingText) {
+    const hour = new Date().getHours();
+    if (hour < 12) {
+      greetingText.textContent = 'Good Morning! Welcome to DASS';
+    } else if (hour < 18) {
+      greetingText.textContent = 'Good Afternoon! Welcome to DASS';
+    } else {
+      greetingText.textContent = 'Good Evening! Welcome to DASS';
     }
-};
+  }
+});
