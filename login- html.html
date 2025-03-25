@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Academic Submission System (DASS) Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-container">
+        <div class="login-box">
+            <h2>Login to DASS</h2>
+
+            <form action="#" method="POST">
+                <div class="social-login">
+                    <button class="social-btn google">Login with Google</button>
+                    <button class="social-btn linkedin">Login with LinkedIn</button>
+                    <button class="social-btn orcid">Login with ORCID</button>
+                    <button class="social-btn facebook">Login with Facebook</button>
+                </div>
+
+                <div class="separator">OR</div>
+
+                <div class="input-container">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="text" name="organization" placeholder="Organization" required>
+                    <input type="text" name="region" placeholder="Region" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                    <input type="password" name="password" placeholder="Password" required id="password" oninput="checkPasswordStrength()">
+                    <div id="password-strength"></div>
+                </div>
+
+                <div class="password-tips">
+                    <p>Tips for a strong password:</p>
+                    <ul>
+                        <li>Use a mix of uppercase and lowercase letters</li>
+                        <li>Include numbers and special characters</li>
+                        <li>Avoid common words and sequences</li>
+                    </ul>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox" name="remember"> Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Submission Guidelines</a>
+            <a href="#">FAQs</a>
+            <a href="#">Careers</a>
+        </div>
+
+        <div class="newsletter">
+            <input type="email" placeholder="Subscribe to our newsletter" />
+            <button type="button">Subscribe</button>
+        </div>
+
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+
+        <button class="live-chat-btn">Live Chat</button>
+    </footer>
+
+    <script>
+        function checkPasswordStrength() {
+            const password = document.getElementById("password").value;
+            const strengthMeter = document.getElementById("password-strength");
+            let strength = 0;
+            
+            if (password.length >= 8) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[a-z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) strength++;
+
+            if (strength == 1) {
+                strengthMeter.textContent = "Weak Password";
+                strengthMeter.style.color = "red";
+            } else if (strength == 2) {
+                strengthMeter.textContent = "Medium Password";
+                strengthMeter.style.color = "yellow";
+            } else if (strength >= 3) {
+                strengthMeter.textContent = "Strong Password";
+                strengthMeter.style.color = "green";
+            } else {
+                strengthMeter.textContent = "";
+            }
+        }
+    </script>
+
+</body>
+</html>

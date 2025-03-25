@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Contact - DASS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        p {
+            line-height: 1.8;
+            color: #555;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 1.2em;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- About Us Section -->
+    <div class="section">
+        <h1>About Us</h1>
+        <p>Welcome to <strong>DASS</strong> (Streamlining, Research, Empowering, Innovation), your trusted platform for accessing, sharing, and discovering research papers across various disciplines.</p>
+
+        <h2>Our Mission</h2>
+        <p>We aim to make academic research more accessible and promote scholarly collaboration by providing a well-structured platform for researchers, students, and professionals.</p>
+
+        <h2>Meet the Team</h2>
+        <ul style="text-align: center; list-style-type: none; padding: 0;">
+            <li><strong>Devagya Singh</strong></li>
+            <li><strong>Swaralipi Samanta</strong></li>
+            <li><strong>Sampurna Sen</strong></li>
+            <li><strong>Ankita Mohanty</strong></li>
+            <li><strong>Adrija Das</strong></li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section">
+        <h1>Contact Us</h1>
+        <p>Have questions or need support? Reach out to us using the form below or email us at <a href="mailto:support@dass.com">support@dass.com</a>.</p>
+
+        <form action="submit_contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Our Office</h2>
+            <p>Campus 6, KIIT University, Bhubaneswar 751024</p>
+
+            <h2>Follow Us</h2>
+            <div class="social-links">
+                <a href="https://twitter.com/dass">Twitter</a>
+                <a href="https://linkedin.com/company/dass">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
