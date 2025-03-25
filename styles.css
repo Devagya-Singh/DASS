@@ -44,6 +44,7 @@ header nav a:hover {
   top: 0;
   z-index: 1000;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
@@ -51,11 +52,12 @@ header nav a:hover {
   min-height: 80px;
 }
 
-
-body {
-  margin: 0;
-  padding-top: 80px; /* Added padding to prevent content overlap */
+header nav a:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
 }
+
 
 /* Container for main content */
 .container {
