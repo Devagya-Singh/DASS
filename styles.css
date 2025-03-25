@@ -38,18 +38,21 @@ header nav a:hover {
   backdrop-filter: blur(10px);
   border-bottom: 2px solid;
   border-image: linear-gradient(90deg, var(--primary-color), var(--primary-dark)) 1;
-  position: fixed;
-  width: 100%;
-  left: 0;
+  position: sticky; /* Changed from fixed to sticky */
   top: 0;
+  width: 100%;
   z-index: 1000;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
   box-sizing: border-box;
   min-height: 80px;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px; /* Added padding to prevent content overlap */
 }
 
 /* Container for main content */
