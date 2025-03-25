@@ -16,19 +16,6 @@ body {
   padding-top: 100px;
   margin: 0;
 }
-const header = $0;
-await setElementStyles(header, {
-  justifyContent: 'center',
-  width: '100%',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-});
-const data = {
-  headerJustifyContent: window.getComputedStyle(header).justifyContent,
-  headerWidth: window.getComputedStyle(header).width,
-  headerMarginLeft: window.getComputedStyle(header).marginLeft,
-  headerMarginRight: window.getComputedStyle(header).marginRight,
-};
 /* Glass Header */
 .glass-header {
   background: rgba(245, 242, 234, 0.8);
@@ -36,17 +23,16 @@ const data = {
   border-bottom: 2px solid;
   border-image: linear-gradient(90deg, var(--primary-color), var(--primary-dark)) 1;
   position: fixed;
-  width: 100%
-  left: 0; 
-  right: 0; 
-  margin: 0 auto;
+  width: 100%;
+  left: 0;
   top: 0;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
-  height: 80px;
+  box-sizing: border-box;
+  min-height: 80px;
 }
 
 /* Logo styling */
