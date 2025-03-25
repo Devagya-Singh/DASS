@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dynamic Academic Submission System (DASS) Login</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Login - DASS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,72 +21,48 @@
         </nav>
     </header>
 
-    <section class="login-container">
-        <div class="login-box">
-            <h2>Login to DASS</h2>
-
-            <form id="login-form" action="#" method="POST">
-                <div class="social-login">
-                    <button type="button" class="btn-social btn-google">Login with Google</button>
-                    <button type="button" class="btn-social btn-linkedin">Login with LinkedIn</button>
-                    <button type="button" class="btn-social btn-orcid">Login with ORCID</button>
-                    <button type="button" class="btn-social btn-facebook">Login with Facebook</button>
-                </div>
-
-                <div class="login-divider">OR</div>
-
-                <div class="input-container">
-                    <input type="text" name="name" placeholder="Full Name" required>
-                    <input type="text" name="organization" placeholder="Organization" required>
-                    <input type="text" name="region" placeholder="Region" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <input type="text" name="phone" placeholder="Phone Number" required>
-                    <input type="password" name="password" placeholder="Password" required id="password" oninput="checkPasswordStrength()">
-                    <div id="password-strength"></div>
-                </div>
-
-                <div class="password-tips">
-                    <p>Tips for a strong password:</p>
-                    <ul>
-                        <li>Use a mix of uppercase and lowercase letters</li>
-                        <li>Include numbers and special characters</li>
-                        <li>Avoid common words and sequences</li>
-                    </ul>
-                </div>
-
-                <div class="remember-forgot">
-                    <label><input type="checkbox" name="remember"> Remember Me</label>
-                    <a href="#" class="forgot-password">Forgot Password?</a>
-                </div>
-
-                <button type="submit" class="btn-login">Login</button>
-            </form>
+    <section class="hero">
+        <div class="gradient-overlay"></div>
+        <div class="content">
+            <h1>Login to DASS</h1>
+            <p>Access your research dashboard and publications</p>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Submission Guidelines</a>
-            <a href="#">FAQs</a>
-            <a href="#">Careers</a>
-        </div>
+    <div class="login-section">
+        <form id="login-form">
+            <div class="social-login">
+                <button type="button" class="btn-social btn-google">Login with Google</button>
+                <button type="button" class="btn-social btn-linkedin">Login with LinkedIn</button>
+                <button type="button" class="btn-social btn-orcid">Login with ORCID</button>
+                <button type="button" class="btn-social btn-facebook">Login with Facebook</button>
+            </div>
 
-        <div class="newsletter">
-            <input type="email" placeholder="Subscribe to our newsletter" />
-            <button type="button" class="btn-gold">Subscribe</button>
-        </div>
+            <div class="login-divider">OR</div>
 
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
-        </div>
+            <div class="input-container">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Password" required id="password" oninput="checkPasswordStrength()">
+                <div id="password-strength"></div>
+            </div>
 
-        <button class="live-chat-btn">Live Chat</button>
-    </footer>
+            <div class="password-tips">
+                <p>Tips for a strong password:</p>
+                <ul>
+                    <li>Use a mix of uppercase and lowercase letters</li>
+                    <li>Include numbers and special characters</li>
+                    <li>Avoid common words and sequences</li>
+                </ul>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox" name="remember"> Remember Me</label>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn-gold">Login</button>
+        </form>
+    </div>
 
     <script>
         function checkPasswordStrength() {
