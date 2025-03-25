@@ -12,19 +12,20 @@ header nav a {
     padding: 10px 20px;
     margin: 5px;
     background-color: var(--primary-color);
-    color: #D4AF37;
+    color: var(--accent-color); /* This will make text yellow (Gold) */
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 header nav a:hover {
     background-color: var(--accent-color);
-    color: var(--primary-color); 
+    color: var(--primary-color); /* This will make text red on hover */
     transform: scale(1.05);
 }
+
 
 
 @media (max-width: 768px) {
