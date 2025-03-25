@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us & Contact - DASS</title>
+    <title>About Us - DASS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,16 +21,24 @@
         </nav>
     </header>
 
-    <div class="container">
-        <!-- About Us Section -->
-        <div class="section">
+    <section class="hero">
+        <div class="gradient-overlay"></div>
+        <div class="content">
             <h1>About Us</h1>
-            <p>Welcome to <strong>DASS</strong> (Streamlining, Research, Empowering, Innovation), your trusted platform for accessing, sharing, and discovering research papers across various disciplines.</p>
+            <p>Learn about our mission and the team behind DASS</p>
+        </div>
+    </section>
 
-            <h2>Our Mission</h2>
+    <div class="container">
+        <div class="section">
+            <h2>Welcome to</h2>
+            <h3><strong>DASS</strong> (Streamlining, Research, Empowering, Innovation)</h3>
+            <p>Your trusted platform for accessing, sharing, and discovering research papers across various disciplines.</p>
             <p>We aim to make academic research more accessible and promote scholarly collaboration by providing a well-structured platform for researchers, students, and professionals.</p>
+        </div>
 
-            <h2>Meet the Team</h2>
+        <div class="section">
+            <h2>Meet Our Team</h2>
             <div class="creators-container">
                 <div class="creator-profile">
                     <img src="profile_devagya.jpg" alt="Devagya Singh">
@@ -38,34 +46,33 @@
                     <p>Project Lead</p>
                 </div>
                 <div class="creator-profile">
-                    <img src="profile_swaralipi.jpg" alt="Swaralipi Samanta">
-                    <h3>Swaralipi Samanta</h3>
+                    <img src="profile_swaralipi.jpg" alt="Swaralipi">
+                    <h3>Swaralipi</h3>
                     <p>Backend Engineer</p>
                 </div>
                 <div class="creator-profile">
-                    <img src="profile_sampurna.jpg" alt="Sampurna Sen">
-                    <h3>Sampurna Sen</h3>
+                    <img src="profile_sampurna.jpg" alt="Sampurna">
+                    <h3>Sampurna</h3>
                     <p>Technical Writer</p>
                 </div>
                 <div class="creator-profile">
-                    <img src="profile_ankita.jpg" alt="Ankita Mohanty">
-                    <h3>Ankita Mohanty</h3>
+                    <img src="profile_ankita.jpg" alt="Ankita">
+                    <h3>Ankita</h3>
                     <p>Database Manager</p>
                 </div>
                 <div class="creator-profile">
-                    <img src="profile_adrija.jpg" alt="Adrija Das">
-                    <h3>Adrija Das</h3>
+                    <img src="profile_adrija.jpg" alt="Adrija">
+                    <h3>Adrija</h3>
                     <p>QA & Testing</p>
                 </div>
             </div>
         </div>
 
-        <!-- Contact Section -->
         <div class="section">
-            <h1>Contact Us</h1>
+            <h2>Contact Us</h2>
             <p>Have questions or need support? Reach out to us using the form below or email us at <a href="mailto:support@dass.com">support@dass.com</a>.</p>
 
-            <form id="contact-form" action="submit_contact.php" method="post" class="contact-form">
+            <form id="contact-form" class="contact-form">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -90,14 +97,7 @@
             </form>
 
             <div class="contact-info">
-                <h2>Our Office</h2>
                 <p>Campus 6, KIIT University, Bhubaneswar 751024</p>
-
-                <h2>Follow Us</h2>
-                <div class="social-links">
-                    <a href="https://twitter.com/dass">Twitter</a>
-                    <a href="https://linkedin.com/company/dass">LinkedIn</a>
-                </div>
             </div>
         </div>
     </div>
