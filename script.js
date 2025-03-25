@@ -1,16 +1,14 @@
-// JavaScript for smooth scrolling and dynamic features
-document.addEventListener('DOMContentLoaded', function() {
-  // Setup navigation links
-  document.querySelectorAll('header nav a').forEach(link => {
-    link.addEventListener('click', event => {
-      event.preventDefault();
-      const targetId = link.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
+document.querySelectorAll('header nav a').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
   });
+});
+// JavaScript for smooth scrolling and dynamic features
 
   // Contact form submission alert
   const contactForm = document.getElementById('contact-form');
