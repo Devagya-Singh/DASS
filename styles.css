@@ -30,11 +30,10 @@ body {
   top: 0;
   z-index: 1000;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
-  min-height: 80px;
+  height: 80px;
 }
 
 /* Logo styling */
