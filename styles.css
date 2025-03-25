@@ -12,18 +12,20 @@ header nav a {
     padding: 10px 20px;
     margin: 5px;
     background-color: var(--primary-color);
-    color: var(--light-text);
+    color: var(--accent-color); 
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 }
 
 header nav a:hover {
     background-color: var(--accent-color);
+    color: var(--primary-color); 
     transform: scale(1.05);
 }
+
 
 @media (max-width: 768px) {
     header nav a {
