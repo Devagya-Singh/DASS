@@ -7,25 +7,13 @@
   --text-color: #333333;
   --light-text: #F5F2EA;
 }
-header nav a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: var(--primary-color);
-    color: var(--accent-color); /* This will make text yellow (Gold) */
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
+
 
 header nav a:hover {
     background-color: var(--accent-color);
-    color: var(--primary-color); /* This will make text red on hover */
+    color: var(--primary-color); /* Red text on hover */
     transform: scale(1.05);
 }
-
 
 
 @media (max-width: 768px) {
@@ -33,6 +21,20 @@ header nav a:hover {
         display: block;
         width: 100%;
         text-align: center;
+
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--primary-color);
+    color: var(--accent-color); /* Gold text color */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
     }
 }
 
