@@ -66,12 +66,13 @@
    - Monitor the review process and communicate with authors.
 
 ## Contributors
-- **Devagya Singh** *(Project Lead)*  
-- Swaralipi  
-- Sampurna  
-- Deebleena  
-- Adrija  
-- Ankita
+- **Devagya Singh** *(Project Lead)*  *(Frontend Engineer)*
+- Swaralipi *(Backend Engineer)*
+- Sampurna  *(Technical Writer)*
+- Ankita  *(Database Manager)*
+- Deebleena  *(UI/UX Designer)*
+- Adrija  *(QA and Testing)*
+
 
 ## Future Enhancements
 - Integration with plagiarism detection tools.
