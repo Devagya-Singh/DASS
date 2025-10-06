@@ -1,0 +1,116 @@
+.dashboard {
+  padding: 40px;
+  background-color: #f8f5ed;
+  min-height: 100vh;
+  margin-top: 80px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard h2 {
+  font-size: 28px;
+  color: #800000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  padding: 10px 15px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.view-all-btn {
+  padding: 10px 18px;
+  background-color: #800000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #5a0000;
+}
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.publication-card {
+  background-color: #fff;
+  border-left: 5px solid #800000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publication-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.publication-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.publication-card .abstract {
+  font-style: italic;
+  margin-top: 10px;
+  color: #666;
+}
+
+.publication-card .pdf-actions {
+  margin-top: 15px;
+}
+
+.publication-card .pdf-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #800000;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.publication-card .pdf-link:hover {
+  background-color:#D4AF37;
+  color: black;
+}
+
+.status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.approved {
+  color: green;
+}
+
+.status.pending {
+  color: #f0a500;
+}
+
+.status.rejected {
+  color: red;
+}

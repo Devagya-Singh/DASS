@@ -1,0 +1,177 @@
+/* General container for About Us page */
+.about-us-container {
+    padding: 40px;
+    background-color: #f8f5ed;
+    text-align: center;
+}
+
+/* Title styling */
+.about-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #800000;
+    margin-bottom: 10px;
+}
+
+.about-description {
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', serif;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Section title styling */
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;  /* Add margin bottom to create space between title and content */
+    color: #a00;
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Individual Team Card */
+.team-card {
+    background: #f8f5ed;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 240px; /* Slightly wider */
+    height: 320px; /* Taller cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect: Lift the card */
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Team member image */
+.team-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #a00;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image zoom effect on hover */
+.team-card:hover .team-image {
+    transform: scale(1.1);
+}
+
+/* Team member name */
+.team-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a00;
+    margin-top: 10px;
+}
+
+/* Team member role */
+.team-role {
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Add margin to the Upcoming Conferences title */
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px; /* Add margin bottom to create space between title and conference list */
+    color: #a00;
+}
+
+/* Style for the "Please Login" message when not logged in */
+.login-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #800000;  /* Consistent red color */
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f8f5ed;  /* Subtle background for emphasis */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+    display: inline-block;
+}
+
+/* Style for the login link */
+.login-message a {
+    color: #800000;  /* Red color for the link */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.login-message a:hover {
+    color: #5a0000;  /* Darker red on hover */
+}
+
+/* Style for the conference list */
+.conference-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Style for each conference card */
+.conference-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #800000;
+    transition: transform 0.2s ease;
+}
+
+.conference-card:hover {
+    transform: translateY(-5px);
+}
+
+.conference-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.conference-card p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.conference-card button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.conference-card button:hover {
+    background-color: #5a0000;
+}

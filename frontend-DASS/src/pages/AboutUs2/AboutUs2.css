@@ -1,0 +1,112 @@
+.about-us-container {
+    padding: 60px; /* Increased padding to lower everything */
+    background-color: #f8f5ed;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* About Us Heading */
+.about-us-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #800000;
+    margin-bottom: 50px; /* Increased margin to add more space below the heading */
+}
+
+/* Title styling */
+.about-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #800000;
+    margin-bottom: 20px; /* Increased margin to add space below title */
+}
+
+.about-description {
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', serif;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 50px; /* Increased margin to lower the section titles */
+    margin-bottom: 30px; /* Increased margin to add space below section title */
+    color: #a00;
+}
+
+/* Contact Information */
+.contact-info {
+    font-size: 18px;
+    color: #555;
+    margin-top: 30px; /* Added more space to lower contact info */
+}
+
+.contact-info p {
+    margin: 15px 0; /* Increased margin for contact info paragraphs */
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px; /* Increased margin to lower the team section */
+}
+
+/* Individual Team Card */
+.team-card {
+    background: #f8f5ed;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 240px; /* Slightly wider */
+    height: 320px; /* Taller cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect: Lift the card */
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Team member image */
+.team-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #a00;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image zoom effect on hover */
+.team-card:hover .team-image {
+    transform: scale(1.1);
+}
+
+/* Team member name */
+.team-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a00;
+    margin-top: 20px; /* Added space below the name */
+}
+
+/* Team member role */
+.team-role {
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+}

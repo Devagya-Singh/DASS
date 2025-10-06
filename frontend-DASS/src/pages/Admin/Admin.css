@@ -1,0 +1,127 @@
+.admin-dashboard {
+    padding: 40px;
+    background-color: #f8f5ed;
+    min-height: 100vh;
+    margin-top: 80px;
+  }
+  
+  .admin-dashboard h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #800000;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+  }
+  
+  .paper-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f5ed;
+  }
+  
+  .paper-table th,
+  .paper-table td {
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .paper-table th {
+    background-color: #800000;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .status {
+    font-weight: bold;
+  }
+  
+  .status.approved {
+    color: green;
+    border: none;
+  }
+  
+  .status.rejected {
+    color: red;
+    border: none;
+  }
+  
+  .status.pending {
+    color: #888;
+    border: none;
+    
+  }
+  
+  /* Buttons */
+  button.approve,
+  button.reject {
+    padding: 8px 14px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button.approve {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button.approve:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+  }
+  
+  button.reject {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.reject:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .admin-dashboard {
+      padding: 20px;
+      margin-top: 60px;
+    }
+  
+    .paper-table th,
+    .paper-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    button.approve,
+    button.reject {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  }
+  /* PDF Link Styling */
+.pdf-link {
+  color: #004080;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Cormorant Garamond', serif;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.pdf-link:hover {
+  color: #800000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pdf-link::after {
+  content: " ↗";
+  font-size: 0.9em;
+  color: #555;
+}
