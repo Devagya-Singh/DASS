@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Research Paper Submission System (DASS)
 
 A comprehensive web application that connects authors to conferences for research paper submissions.
@@ -170,3 +171,6 @@ DASS/
 ## License
 
 This project is licensed under the MIT License.
+=======
+# DASS
+>>>>>>> c4ac52e866652379f918425126fe872a4e46b802
